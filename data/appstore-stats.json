@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-26T17:27:58.422Z",
+  "lastUpdated": "2026-09-27T17:58:41.527Z",
   "totals": {
-    "downloads": 383
+    "downloads": 387
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 250,
+        "total": 253,
         "priorToSeries": 86,
-        "last7Days": 10,
-        "last30Days": 55,
+        "last7Days": 12,
+        "last30Days": 58,
         "daily": [
-          {
-            "date": "2026-06-28",
-            "units": 1
-          },
           {
             "date": "2026-06-29",
             "units": 0
@@ -390,6 +386,10 @@
           {
             "date": "2026-09-25",
             "units": 2
+          },
+          {
+            "date": "2026-09-26",
+            "units": 3
           }
         ]
       },
@@ -397,14 +397,14 @@
         "total": 32
       },
       "devices": {
-        "iPhone": 224,
+        "iPhone": 227,
         "Desktop": 14,
         "iPad": 12
       },
       "countries": {
-        "US": 81,
+        "US": 82,
         "GB": 61,
-        "FR": 27,
+        "FR": 28,
         "CA": 14,
         "AU": 14,
         "SA": 6,
@@ -413,11 +413,11 @@
         "CH": 4,
         "MA": 4,
         "IE": 3,
+        "DE": 3,
         "JP": 2,
         "NO": 2,
         "KR": 2,
         "CN": 2,
-        "DE": 2,
         "RU": 2,
         "ES": 1,
         "AR": 1,
@@ -463,11 +463,11 @@
         },
         {
           "month": "2026-09",
-          "units": 51
+          "units": 54
         }
       ],
       "updates": {
-        "total": 179
+        "total": 180
       },
       "activeDevices": null
     },
@@ -493,15 +493,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 80,
+        "total": 81,
         "priorToSeries": 0,
         "last7Days": 16,
-        "last30Days": 51,
+        "last30Days": 52,
         "daily": [
-          {
-            "date": "2026-06-28",
-            "units": 0
-          },
           {
             "date": "2026-06-29",
             "units": 0
@@ -857,6 +853,10 @@
           {
             "date": "2026-09-25",
             "units": 2
+          },
+          {
+            "date": "2026-09-26",
+            "units": 1
           }
         ]
       },
@@ -864,7 +864,7 @@
         "total": 5
       },
       "devices": {
-        "iPhone": 71,
+        "iPhone": 72,
         "iPad": 7,
         "Desktop": 2
       },
@@ -876,13 +876,13 @@
         "BJ": 3,
         "CA": 3,
         "MY": 2,
+        "SA": 2,
         "EG": 1,
         "CG": 1,
         "JP": 1,
         "XK": 1,
         "KG": 1,
         "DK": 1,
-        "SA": 1,
         "TD": 1,
         "GH": 1,
         "JO": 1,
@@ -909,7 +909,7 @@
         },
         {
           "month": "2026-09",
-          "units": 49
+          "units": 50
         }
       ],
       "updates": {
@@ -940,13 +940,9 @@
       "downloads": {
         "total": 53,
         "priorToSeries": 0,
-        "last7Days": 15,
+        "last7Days": 14,
         "last30Days": 42,
         "daily": [
-          {
-            "date": "2026-06-28",
-            "units": 0
-          },
           {
             "date": "2026-06-29",
             "units": 0
@@ -1301,6 +1297,10 @@
           },
           {
             "date": "2026-09-25",
+            "units": 0
+          },
+          {
+            "date": "2026-09-26",
             "units": 0
           }
         ]
@@ -1365,6 +1365,391 @@
       ],
       "updates": {
         "total": 16
+      },
+      "activeDevices": null
+    },
+    {
+      "id": "6816525366",
+      "name": "Clipdori: Clipboard History",
+      "bundleId": "com.achraftrabelsi.clipdori",
+      "iconUrl": null,
+      "meta": null,
+      "downloads": {
+        "total": 0,
+        "priorToSeries": 0,
+        "last7Days": 0,
+        "last30Days": 0,
+        "daily": [
+          {
+            "date": "2026-06-29",
+            "units": 0
+          },
+          {
+            "date": "2026-06-30",
+            "units": 0
+          },
+          {
+            "date": "2026-07-01",
+            "units": 0
+          },
+          {
+            "date": "2026-07-02",
+            "units": 0
+          },
+          {
+            "date": "2026-07-03",
+            "units": 0
+          },
+          {
+            "date": "2026-07-04",
+            "units": 0
+          },
+          {
+            "date": "2026-07-05",
+            "units": 0
+          },
+          {
+            "date": "2026-07-06",
+            "units": 0
+          },
+          {
+            "date": "2026-07-07",
+            "units": 0
+          },
+          {
+            "date": "2026-07-08",
+            "units": 0
+          },
+          {
+            "date": "2026-07-09",
+            "units": 0
+          },
+          {
+            "date": "2026-07-10",
+            "units": 0
+          },
+          {
+            "date": "2026-07-11",
+            "units": 0
+          },
+          {
+            "date": "2026-07-12",
+            "units": 0
+          },
+          {
+            "date": "2026-07-13",
+            "units": 0
+          },
+          {
+            "date": "2026-07-14",
+            "units": 0
+          },
+          {
+            "date": "2026-07-15",
+            "units": 0
+          },
+          {
+            "date": "2026-07-16",
+            "units": 0
+          },
+          {
+            "date": "2026-07-17",
+            "units": 0
+          },
+          {
+            "date": "2026-07-18",
+            "units": 0
+          },
+          {
+            "date": "2026-07-19",
+            "units": 0
+          },
+          {
+            "date": "2026-07-20",
+            "units": 0
+          },
+          {
+            "date": "2026-07-21",
+            "units": 0
+          },
+          {
+            "date": "2026-07-22",
+            "units": 0
+          },
+          {
+            "date": "2026-07-23",
+            "units": 0
+          },
+          {
+            "date": "2026-07-24",
+            "units": 0
+          },
+          {
+            "date": "2026-07-25",
+            "units": 0
+          },
+          {
+            "date": "2026-07-26",
+            "units": 0
+          },
+          {
+            "date": "2026-07-27",
+            "units": 0
+          },
+          {
+            "date": "2026-07-28",
+            "units": 0
+          },
+          {
+            "date": "2026-07-29",
+            "units": 0
+          },
+          {
+            "date": "2026-07-30",
+            "units": 0
+          },
+          {
+            "date": "2026-07-31",
+            "units": 0
+          },
+          {
+            "date": "2026-08-01",
+            "units": 0
+          },
+          {
+            "date": "2026-08-02",
+            "units": 0
+          },
+          {
+            "date": "2026-08-03",
+            "units": 0
+          },
+          {
+            "date": "2026-08-04",
+            "units": 0
+          },
+          {
+            "date": "2026-08-05",
+            "units": 0
+          },
+          {
+            "date": "2026-08-06",
+            "units": 0
+          },
+          {
+            "date": "2026-08-07",
+            "units": 0
+          },
+          {
+            "date": "2026-08-08",
+            "units": 0
+          },
+          {
+            "date": "2026-08-09",
+            "units": 0
+          },
+          {
+            "date": "2026-08-10",
+            "units": 0
+          },
+          {
+            "date": "2026-08-11",
+            "units": 0
+          },
+          {
+            "date": "2026-08-12",
+            "units": 0
+          },
+          {
+            "date": "2026-08-13",
+            "units": 0
+          },
+          {
+            "date": "2026-08-14",
+            "units": 0
+          },
+          {
+            "date": "2026-08-15",
+            "units": 0
+          },
+          {
+            "date": "2026-08-16",
+            "units": 0
+          },
+          {
+            "date": "2026-08-17",
+            "units": 0
+          },
+          {
+            "date": "2026-08-18",
+            "units": 0
+          },
+          {
+            "date": "2026-08-19",
+            "units": 0
+          },
+          {
+            "date": "2026-08-20",
+            "units": 0
+          },
+          {
+            "date": "2026-08-21",
+            "units": 0
+          },
+          {
+            "date": "2026-08-22",
+            "units": 0
+          },
+          {
+            "date": "2026-08-23",
+            "units": 0
+          },
+          {
+            "date": "2026-08-24",
+            "units": 0
+          },
+          {
+            "date": "2026-08-25",
+            "units": 0
+          },
+          {
+            "date": "2026-08-26",
+            "units": 0
+          },
+          {
+            "date": "2026-08-27",
+            "units": 0
+          },
+          {
+            "date": "2026-08-28",
+            "units": 0
+          },
+          {
+            "date": "2026-08-29",
+            "units": 0
+          },
+          {
+            "date": "2026-08-30",
+            "units": 0
+          },
+          {
+            "date": "2026-08-31",
+            "units": 0
+          },
+          {
+            "date": "2026-09-01",
+            "units": 0
+          },
+          {
+            "date": "2026-09-02",
+            "units": 0
+          },
+          {
+            "date": "2026-09-03",
+            "units": 0
+          },
+          {
+            "date": "2026-09-04",
+            "units": 0
+          },
+          {
+            "date": "2026-09-05",
+            "units": 0
+          },
+          {
+            "date": "2026-09-06",
+            "units": 0
+          },
+          {
+            "date": "2026-09-07",
+            "units": 0
+          },
+          {
+            "date": "2026-09-08",
+            "units": 0
+          },
+          {
+            "date": "2026-09-09",
+            "units": 0
+          },
+          {
+            "date": "2026-09-10",
+            "units": 0
+          },
+          {
+            "date": "2026-09-11",
+            "units": 0
+          },
+          {
+            "date": "2026-09-12",
+            "units": 0
+          },
+          {
+            "date": "2026-09-13",
+            "units": 0
+          },
+          {
+            "date": "2026-09-14",
+            "units": 0
+          },
+          {
+            "date": "2026-09-15",
+            "units": 0
+          },
+          {
+            "date": "2026-09-16",
+            "units": 0
+          },
+          {
+            "date": "2026-09-17",
+            "units": 0
+          },
+          {
+            "date": "2026-09-18",
+            "units": 0
+          },
+          {
+            "date": "2026-09-19",
+            "units": 0
+          },
+          {
+            "date": "2026-09-20",
+            "units": 0
+          },
+          {
+            "date": "2026-09-21",
+            "units": 0
+          },
+          {
+            "date": "2026-09-22",
+            "units": 0
+          },
+          {
+            "date": "2026-09-23",
+            "units": 0
+          },
+          {
+            "date": "2026-09-24",
+            "units": 0
+          },
+          {
+            "date": "2026-09-25",
+            "units": 0
+          },
+          {
+            "date": "2026-09-26",
+            "units": 0
+          }
+        ]
+      },
+      "redownloads": {
+        "total": 0
+      },
+      "devices": {},
+      "countries": {},
+      "monthly": [],
+      "updates": {
+        "total": 0
       },
       "activeDevices": null
     }
