@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T20:18:35.314Z",
+  "lastUpdated": "2026-09-29T18:58:53.411Z",
   "totals": {
     "downloads": 392
   },
@@ -28,13 +28,9 @@
       "downloads": {
         "total": 256,
         "priorToSeries": 86,
-        "last7Days": 14,
+        "last7Days": 13,
         "last30Days": 60,
         "daily": [
-          {
-            "date": "2026-06-30",
-            "units": 1
-          },
           {
             "date": "2026-07-01",
             "units": 0
@@ -390,6 +386,10 @@
           {
             "date": "2026-09-27",
             "units": 3
+          },
+          {
+            "date": "2026-09-28",
+            "units": 0
           }
         ]
       },
@@ -495,13 +495,9 @@
       "downloads": {
         "total": 83,
         "priorToSeries": 0,
-        "last7Days": 15,
+        "last7Days": 13,
         "last30Days": 53,
         "daily": [
-          {
-            "date": "2026-06-30",
-            "units": 0
-          },
           {
             "date": "2026-07-01",
             "units": 0
@@ -857,6 +853,10 @@
           {
             "date": "2026-09-27",
             "units": 2
+          },
+          {
+            "date": "2026-09-28",
+            "units": 0
           }
         ]
       },
@@ -941,13 +941,9 @@
       "downloads": {
         "total": 53,
         "priorToSeries": 0,
-        "last7Days": 12,
+        "last7Days": 8,
         "last30Days": 41,
         "daily": [
-          {
-            "date": "2026-06-30",
-            "units": 0
-          },
           {
             "date": "2026-07-01",
             "units": 0
@@ -1303,6 +1299,10 @@
           {
             "date": "2026-09-27",
             "units": 0
+          },
+          {
+            "date": "2026-09-28",
+            "units": 0
           }
         ]
       },
@@ -1381,10 +1381,6 @@
         "last7Days": 0,
         "last30Days": 0,
         "daily": [
-          {
-            "date": "2026-06-30",
-            "units": 0
-          },
           {
             "date": "2026-07-01",
             "units": 0
@@ -1739,6 +1735,10 @@
           },
           {
             "date": "2026-09-27",
+            "units": 0
+          },
+          {
+            "date": "2026-09-28",
             "units": 0
           }
         ]
