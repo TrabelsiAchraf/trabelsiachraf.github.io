@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-29T18:58:53.411Z",
+  "lastUpdated": "2026-09-30T16:56:05.518Z",
   "totals": {
-    "downloads": 392
+    "downloads": 395
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 256,
+        "total": 257,
         "priorToSeries": 86,
         "last7Days": 13,
         "last30Days": 60,
         "daily": [
-          {
-            "date": "2026-07-01",
-            "units": 0
-          },
           {
             "date": "2026-07-02",
             "units": 1
@@ -389,6 +385,10 @@
           },
           {
             "date": "2026-09-28",
+            "units": 1
+          },
+          {
+            "date": "2026-09-29",
             "units": 0
           }
         ]
@@ -397,12 +397,12 @@
         "total": 32
       },
       "devices": {
-        "iPhone": 230,
+        "iPhone": 231,
         "Desktop": 14,
         "iPad": 12
       },
       "countries": {
-        "US": 82,
+        "US": 83,
         "GB": 62,
         "FR": 28,
         "CA": 15,
@@ -463,11 +463,11 @@
         },
         {
           "month": "2026-09",
-          "units": 57
+          "units": 58
         }
       ],
       "updates": {
-        "total": 180
+        "total": 181
       },
       "activeDevices": null
     },
@@ -493,15 +493,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 83,
+        "total": 85,
         "priorToSeries": 0,
-        "last7Days": 13,
-        "last30Days": 53,
+        "last7Days": 14,
+        "last30Days": 55,
         "daily": [
-          {
-            "date": "2026-07-01",
-            "units": 0
-          },
           {
             "date": "2026-07-02",
             "units": 1
@@ -856,7 +852,11 @@
           },
           {
             "date": "2026-09-28",
-            "units": 0
+            "units": 1
+          },
+          {
+            "date": "2026-09-29",
+            "units": 1
           }
         ]
       },
@@ -864,19 +864,19 @@
         "total": 5
       },
       "devices": {
-        "iPhone": 74,
+        "iPhone": 76,
         "iPad": 7,
         "Desktop": 2
       },
       "countries": {
         "FR": 23,
         "SN": 20,
-        "US": 14,
+        "US": 15,
         "CI": 3,
         "BJ": 3,
         "CA": 3,
+        "SA": 3,
         "MY": 2,
-        "SA": 2,
         "EG": 1,
         "CG": 1,
         "JP": 1,
@@ -910,7 +910,7 @@
         },
         {
           "month": "2026-09",
-          "units": 52
+          "units": 54
         }
       ],
       "updates": {
@@ -941,13 +941,9 @@
       "downloads": {
         "total": 53,
         "priorToSeries": 0,
-        "last7Days": 8,
+        "last7Days": 6,
         "last30Days": 41,
         "daily": [
-          {
-            "date": "2026-07-01",
-            "units": 0
-          },
           {
             "date": "2026-07-02",
             "units": 0
@@ -1302,6 +1298,10 @@
           },
           {
             "date": "2026-09-28",
+            "units": 0
+          },
+          {
+            "date": "2026-09-29",
             "units": 0
           }
         ]
@@ -1373,18 +1373,28 @@
       "id": "6816525366",
       "name": "Clipdori: Clipboard History",
       "bundleId": "com.achraftrabelsi.clipdori",
-      "iconUrl": null,
-      "meta": null,
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/49/5f/a9495f73-6b3f-aae3-7d6f-e54705c129be/AppIcon-0-0-85-220-0-5-0-2x.png/100x100bb.png",
+      "meta": {
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a9/49/5f/a9495f73-6b3f-aae3-7d6f-e54705c129be/AppIcon-0-0-85-220-0-5-0-2x.png/100x100bb.png",
+        "releaseDate": "2026-09-30",
+        "version": "1.0.0",
+        "versionDate": "2026-09-30",
+        "genre": "Productivity",
+        "languages": [
+          "EN",
+          "FR"
+        ],
+        "minimumOsVersion": "14.0",
+        "sizeBytes": 3557406,
+        "rating": 0,
+        "ratingCount": 0
+      },
       "downloads": {
         "total": 0,
         "priorToSeries": 0,
         "last7Days": 0,
         "last30Days": 0,
         "daily": [
-          {
-            "date": "2026-07-01",
-            "units": 0
-          },
           {
             "date": "2026-07-02",
             "units": 0
@@ -1739,6 +1749,10 @@
           },
           {
             "date": "2026-09-28",
+            "units": 0
+          },
+          {
+            "date": "2026-09-29",
             "units": 0
           }
         ]
