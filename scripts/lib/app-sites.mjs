@@ -21,11 +21,36 @@ export function toDomain(url) {
   return url.startsWith(GITHUB_IO) ? DOMAIN + url.slice(GITHUB_IO.length) : url;
 }
 
+export function parseArgs(argv) {
+  const result = { readmes: [] };
+  for (let i = 0; i < argv.length; i++) {
+    if (argv[i] === '--phase' && i + 1 < argv.length) {
+      result.phase = argv[i + 1];
+      i++;
+    } else if (argv[i] === '--readme') {
+      i++;
+      while (i < argv.length && !argv[i].startsWith('--')) {
+        result.readmes.push(argv[i]);
+        i++;
+      }
+      i--;
+    }
+  }
+  return result;
+}
+
 export function extractLinks(html, baseUrl) {
   const links = [];
-  for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
-    if (href.startsWith('mailto:') || href.startsWith('#')) continue;
-    links.push(new URL(href, baseUrl).href.split('#')[0]);
+  const invalid = [];
+  for (const [, href] of html.matchAll(/href=["']([^"']+)["']/gi)) {
+    const decoded = href.replace(/&amp;/g, '&');
+    if (decoded.startsWith('mailto:') || decoded.startsWith('tel:') || decoded.startsWith('javascript:') || decoded.startsWith('#')) continue;
+    try {
+      const resolved = new URL(decoded, baseUrl).href.split('#')[0];
+      links.push(resolved);
+    } catch {
+      links.push(`invalid:${decoded}`);
+    }
   }
   return [...new Set(links)];
 }
