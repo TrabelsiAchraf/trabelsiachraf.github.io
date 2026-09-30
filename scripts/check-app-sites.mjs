@@ -82,7 +82,7 @@ for (const file of readmes) {
     failures.push(`${file}: cannot read (${e.message})`);
     continue;
   }
-  const markdownLinks = [...text.matchAll(/https?:\/\/[^\s)<>\]]+/g)].map((m) => m[0].replace(/[.,]$/, ''));
+  const markdownLinks = [...text.matchAll(/https?:\/\/[^\s)<>\]]+/g)].map((m) => m[0].replace(/[.,]$/, '')).filter((u) => !/^https?:\/\/localhost[:/]/.test(u));
   await checkLinks(file, markdownLinks.map((u) => `<a href="${u}">`).join(''), DOMAIN + '/');
 }
 
