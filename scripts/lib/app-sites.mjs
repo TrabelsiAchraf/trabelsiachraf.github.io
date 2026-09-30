@@ -42,7 +42,7 @@ export function parseArgs(argv) {
 export function extractLinks(html, baseUrl) {
   const links = [];
   const invalid = [];
-  for (const [, href] of html.matchAll(/href=["']([^"']+)["']/gi)) {
+  for (const [, href] of html.matchAll(/(?<![\w-])(?:href|src)=["']([^"']+)["']/gi)) {
     const decoded = href.replace(/&amp;/g, '&');
     if (decoded.startsWith('mailto:') || decoded.startsWith('tel:') || decoded.startsWith('javascript:') || decoded.startsWith('#')) continue;
     try {

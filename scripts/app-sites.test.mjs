@@ -49,3 +49,11 @@ test('parseArgs extracts phase and readme arguments', () => {
   assert.deepEqual(parseArgs(['--phase', 'before', '--readme', 'a', 'b']), { phase: 'before', readmes: ['a', 'b'] });
   assert.deepEqual(parseArgs([]), { readmes: [] });
 });
+
+test('extractLinks also collects src attributes', () => {
+  const html = `<img src="hero.png"><script SRC='/app.js'></script><img data-src="lazy.png">`;
+  assert.deepEqual(extractLinks(html, `${DOMAIN}/saltscan-site/fr/`), [
+    `${DOMAIN}/saltscan-site/fr/hero.png`,
+    `${DOMAIN}/app.js`,
+  ]);
+});
