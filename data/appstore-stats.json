@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-10-05T21:22:18.686Z",
+  "lastUpdated": "2026-10-06T19:13:02.736Z",
   "totals": {
-    "downloads": 418
+    "downloads": 422
   },
   "apps": [
     {
       "id": "6740041173",
       "name": "Salt Scan: Sodium Tracker",
       "bundleId": "com.tadevv.SaltScan",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/b9/18/bfb91829-4700-58b1-4018-712268261b22/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/b0/30/dab030e0-7bd3-6b93-7532-1558044b2146/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "meta": {
-        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/b9/18/bfb91829-4700-58b1-4018-712268261b22/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/b0/30/dab030e0-7bd3-6b93-7532-1558044b2146/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
         "releaseDate": "2025-01-12",
-        "version": "0.4.0",
-        "versionDate": "2026-09-05",
+        "version": "0.5.0",
+        "versionDate": "2026-10-05",
         "genre": "Health & Fitness",
         "languages": [
           "AR",
@@ -21,20 +21,16 @@
           "FR"
         ],
         "minimumOsVersion": "18.0",
-        "sizeBytes": 12634112,
+        "sizeBytes": 13033472,
         "rating": 0,
         "ratingCount": 0
       },
       "downloads": {
-        "total": 267,
+        "total": 269,
         "priorToSeries": 86,
-        "last7Days": 11,
-        "last30Days": 66,
+        "last7Days": 12,
+        "last30Days": 67,
         "daily": [
-          {
-            "date": "2026-07-07",
-            "units": 1
-          },
           {
             "date": "2026-07-08",
             "units": 0
@@ -390,6 +386,10 @@
           {
             "date": "2026-10-04",
             "units": 1
+          },
+          {
+            "date": "2026-10-05",
+            "units": 2
           }
         ]
       },
@@ -397,13 +397,13 @@
         "total": 33
       },
       "devices": {
-        "iPhone": 240,
+        "iPhone": 242,
         "Desktop": 14,
         "iPad": 13
       },
       "countries": {
-        "US": 86,
-        "GB": 65,
+        "US": 87,
+        "GB": 66,
         "FR": 29,
         "CA": 18,
         "AU": 15,
@@ -467,11 +467,11 @@
         },
         {
           "month": "2026-10",
-          "units": 9
+          "units": 11
         }
       ],
       "updates": {
-        "total": 181
+        "total": 190
       },
       "activeDevices": null
     },
@@ -479,9 +479,9 @@
       "id": "6768824373",
       "name": "Munajat — Dhikr & Dua",
       "bundleId": "com.tadevv.munajat",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/d1/a3/67d1a39f-34e5-7f49-cea2-4b8b6a0d6313/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/73/61/94736108-0498-39da-92c4-f85484a51c4f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "meta": {
-        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/d1/a3/67d1a39f-34e5-7f49-cea2-4b8b6a0d6313/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/94/73/61/94736108-0498-39da-92c4-f85484a51c4f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
         "releaseDate": "2026-05-26",
         "version": "1.3.0",
         "versionDate": "2026-09-18",
@@ -497,15 +497,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 90,
+        "total": 91,
         "priorToSeries": 0,
         "last7Days": 7,
-        "last30Days": 55,
+        "last30Days": 54,
         "daily": [
-          {
-            "date": "2026-07-07",
-            "units": 0
-          },
           {
             "date": "2026-07-08",
             "units": 0
@@ -861,19 +857,23 @@
           {
             "date": "2026-10-04",
             "units": 1
+          },
+          {
+            "date": "2026-10-05",
+            "units": 1
           }
         ]
       },
       "redownloads": {
-        "total": 6
+        "total": 7
       },
       "devices": {
-        "iPhone": 80,
+        "iPhone": 81,
         "iPad": 8,
         "Desktop": 2
       },
       "countries": {
-        "FR": 24,
+        "FR": 25,
         "SN": 20,
         "US": 15,
         "CI": 4,
@@ -920,7 +920,7 @@
         },
         {
           "month": "2026-10",
-          "units": 5
+          "units": 6
         }
       ],
       "updates": {
@@ -949,15 +949,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 59,
+        "total": 60,
         "priorToSeries": 0,
-        "last7Days": 6,
+        "last7Days": 7,
         "last30Days": 42,
         "daily": [
-          {
-            "date": "2026-07-07",
-            "units": 0
-          },
           {
             "date": "2026-07-08",
             "units": 0
@@ -1313,6 +1309,10 @@
           {
             "date": "2026-10-04",
             "units": 0
+          },
+          {
+            "date": "2026-10-05",
+            "units": 1
           }
         ]
       },
@@ -1320,7 +1320,7 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 59
+        "Desktop": 60
       },
       "countries": {
         "FR": 11,
@@ -1328,10 +1328,10 @@
         "US": 5,
         "DE": 4,
         "CH": 3,
+        "CN": 3,
         "ES": 3,
         "IN": 3,
         "CA": 3,
-        "CN": 2,
         "PL": 2,
         "AU": 2,
         "TN": 2,
@@ -1376,7 +1376,7 @@
         },
         {
           "month": "2026-10",
-          "units": 6
+          "units": 7
         }
       ],
       "updates": {
@@ -1410,10 +1410,6 @@
         "last7Days": 2,
         "last30Days": 2,
         "daily": [
-          {
-            "date": "2026-07-07",
-            "units": 0
-          },
           {
             "date": "2026-07-08",
             "units": 0
@@ -1768,6 +1764,10 @@
           },
           {
             "date": "2026-10-04",
+            "units": 0
+          },
+          {
+            "date": "2026-10-05",
             "units": 0
           }
         ]
