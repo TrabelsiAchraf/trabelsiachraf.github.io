@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-06T19:13:02.736Z",
+  "lastUpdated": "2026-10-07T19:38:20.872Z",
   "totals": {
-    "downloads": 422
+    "downloads": 427
   },
   "apps": [
     {
@@ -31,10 +31,6 @@
         "last7Days": 12,
         "last30Days": 67,
         "daily": [
-          {
-            "date": "2026-07-08",
-            "units": 0
-          },
           {
             "date": "2026-07-09",
             "units": 1
@@ -390,11 +386,15 @@
           {
             "date": "2026-10-05",
             "units": 2
+          },
+          {
+            "date": "2026-10-06",
+            "units": 0
           }
         ]
       },
       "redownloads": {
-        "total": 33
+        "total": 34
       },
       "devices": {
         "iPhone": 242,
@@ -471,7 +471,7 @@
         }
       ],
       "updates": {
-        "total": 190
+        "total": 267
       },
       "activeDevices": null
     },
@@ -497,15 +497,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 91,
+        "total": 92,
         "priorToSeries": 0,
         "last7Days": 7,
-        "last30Days": 54,
+        "last30Days": 55,
         "daily": [
-          {
-            "date": "2026-07-08",
-            "units": 0
-          },
           {
             "date": "2026-07-09",
             "units": 0
@@ -861,14 +857,18 @@
           {
             "date": "2026-10-05",
             "units": 1
+          },
+          {
+            "date": "2026-10-06",
+            "units": 1
           }
         ]
       },
       "redownloads": {
-        "total": 7
+        "total": 8
       },
       "devices": {
-        "iPhone": 81,
+        "iPhone": 82,
         "iPad": 8,
         "Desktop": 2
       },
@@ -894,6 +894,7 @@
         "XK": 1,
         "KG": 1,
         "DK": 1,
+        "CM": 1,
         "LU": 1,
         "NE": 1
       },
@@ -920,7 +921,7 @@
         },
         {
           "month": "2026-10",
-          "units": 6
+          "units": 7
         }
       ],
       "updates": {
@@ -949,15 +950,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 60,
+        "total": 64,
         "priorToSeries": 0,
-        "last7Days": 7,
-        "last30Days": 42,
+        "last7Days": 11,
+        "last30Days": 45,
         "daily": [
-          {
-            "date": "2026-07-08",
-            "units": 0
-          },
           {
             "date": "2026-07-09",
             "units": 0
@@ -1313,6 +1310,10 @@
           {
             "date": "2026-10-05",
             "units": 1
+          },
+          {
+            "date": "2026-10-06",
+            "units": 4
           }
         ]
       },
@@ -1320,15 +1321,15 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 60
+        "Desktop": 64
       },
       "countries": {
-        "FR": 11,
+        "FR": 13,
         "BE": 6,
-        "US": 5,
+        "US": 6,
         "DE": 4,
+        "CN": 4,
         "CH": 3,
-        "CN": 3,
         "ES": 3,
         "IN": 3,
         "CA": 3,
@@ -1376,7 +1377,7 @@
         },
         {
           "month": "2026-10",
-          "units": 7
+          "units": 11
         }
       ],
       "updates": {
@@ -1410,10 +1411,6 @@
         "last7Days": 2,
         "last30Days": 2,
         "daily": [
-          {
-            "date": "2026-07-08",
-            "units": 0
-          },
           {
             "date": "2026-07-09",
             "units": 0
@@ -1768,6 +1765,10 @@
           },
           {
             "date": "2026-10-05",
+            "units": 0
+          },
+          {
+            "date": "2026-10-06",
             "units": 0
           }
         ]
