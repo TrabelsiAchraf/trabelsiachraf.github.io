@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-10-09T19:08:28.543Z",
+  "lastUpdated": "2026-10-10T18:06:37.578Z",
   "totals": {
-    "downloads": 441
+    "downloads": 445
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 275,
+        "total": 277,
         "priorToSeries": 86,
-        "last7Days": 13,
-        "last30Days": 72,
+        "last7Days": 12,
+        "last30Days": 71,
         "daily": [
-          {
-            "date": "2026-07-11",
-            "units": 1
-          },
           {
             "date": "2026-07-12",
             "units": 1
@@ -390,6 +386,10 @@
           {
             "date": "2026-10-08",
             "units": 3
+          },
+          {
+            "date": "2026-10-09",
+            "units": 2
           }
         ]
       },
@@ -397,14 +397,14 @@
         "total": 35
       },
       "devices": {
-        "iPhone": 248,
+        "iPhone": 250,
         "Desktop": 14,
         "iPad": 13
       },
       "countries": {
-        "US": 92,
+        "US": 93,
         "GB": 67,
-        "FR": 29,
+        "FR": 30,
         "CA": 18,
         "AU": 15,
         "IN": 6,
@@ -467,7 +467,7 @@
         },
         {
           "month": "2026-10",
-          "units": 17
+          "units": 19
         }
       ],
       "updates": {
@@ -497,15 +497,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 96,
+        "total": 97,
         "priorToSeries": 0,
-        "last7Days": 10,
-        "last30Days": 56,
+        "last7Days": 8,
+        "last30Days": 55,
         "daily": [
-          {
-            "date": "2026-07-11",
-            "units": 0
-          },
           {
             "date": "2026-07-12",
             "units": 0
@@ -861,6 +857,10 @@
           {
             "date": "2026-10-08",
             "units": 1
+          },
+          {
+            "date": "2026-10-09",
+            "units": 1
           }
         ]
       },
@@ -868,12 +868,12 @@
         "total": 8
       },
       "devices": {
-        "iPhone": 84,
+        "iPhone": 85,
         "iPad": 10,
         "Desktop": 2
       },
       "countries": {
-        "FR": 25,
+        "FR": 26,
         "SN": 20,
         "US": 17,
         "SA": 4,
@@ -921,11 +921,11 @@
         },
         {
           "month": "2026-10",
-          "units": 11
+          "units": 12
         }
       ],
       "updates": {
-        "total": 62
+        "total": 64
       },
       "activeDevices": null
     },
@@ -950,15 +950,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 67,
+        "total": 68,
         "priorToSeries": 0,
-        "last7Days": 12,
+        "last7Days": 9,
         "last30Days": 46,
         "daily": [
-          {
-            "date": "2026-07-11",
-            "units": 0
-          },
           {
             "date": "2026-07-12",
             "units": 0
@@ -1314,6 +1310,10 @@
           {
             "date": "2026-10-08",
             "units": 0
+          },
+          {
+            "date": "2026-10-09",
+            "units": 1
           }
         ]
       },
@@ -1321,10 +1321,10 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 67
+        "Desktop": 68
       },
       "countries": {
-        "FR": 13,
+        "FR": 14,
         "BE": 7,
         "US": 7,
         "DE": 4,
@@ -1378,7 +1378,7 @@
         },
         {
           "month": "2026-10",
-          "units": 14
+          "units": 15
         }
       ],
       "updates": {
@@ -1409,13 +1409,9 @@
       "downloads": {
         "total": 3,
         "priorToSeries": 0,
-        "last7Days": 2,
+        "last7Days": 1,
         "last30Days": 3,
         "daily": [
-          {
-            "date": "2026-07-11",
-            "units": 0
-          },
           {
             "date": "2026-07-12",
             "units": 0
@@ -1771,6 +1767,10 @@
           {
             "date": "2026-10-08",
             "units": 1
+          },
+          {
+            "date": "2026-10-09",
+            "units": 0
           }
         ]
       },
