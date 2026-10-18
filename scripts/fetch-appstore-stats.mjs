@@ -7,7 +7,7 @@ import { createClient, REPORT_GONE } from "./lib/asc-client.mjs";
 import { parseSalesReport } from "./lib/sales-parser.mjs";
 import { buildStats } from "./lib/stats-builder.mjs";
 import { daysAgo, monthsAgo } from "./lib/dates.mjs";
-import { ensureReportRequest, latestActiveDevices } from "./lib/asc-analytics.mjs";
+import { fetchAppUsage } from "./lib/asc-analytics.mjs";
 
 const OUTPUT_PATH = "data/appstore-stats.json";
 const MAX_MONTHS_BACK = 120;
@@ -51,12 +51,7 @@ export function earliestReleaseMonth(metadata) {
     return months[0] ?? null;
 }
 
-async function defaultFetchActiveDevices(client, appId) {
-    const requestId = await ensureReportRequest(client, appId);
-    return requestId === null ? null : latestActiveDevices(client, requestId);
-}
-
-export async function collectStats({ client, vendorNumber, today, lookupMetadata = lookupAppMetadata, fetchActiveDevices = defaultFetchActiveDevices }) {
+export async function collectStats({ client, vendorNumber, today, lookupMetadata = lookupAppMetadata, fetchActiveDevices, fetchUsage = fetchAppUsage }) {
     const apps = await client.listApps();
     const metadata = await lookupMetadata(apps.map((a) => a.id));
 
@@ -104,10 +99,15 @@ export async function collectStats({ client, vendorNumber, today, lookupMetadata
     }
 
     const activeDevicesByApp = new Map();
+    const usageByApp = new Map();
     for (const app of apps) {
         try {
-            const value = await fetchActiveDevices(client, app.id);
-            if (value !== null) activeDevicesByApp.set(app.id, value);
+            if (fetchActiveDevices) {
+                const value = await fetchActiveDevices(client, app.id);
+                if (value !== null) activeDevicesByApp.set(app.id, value);
+            } else {
+                usageByApp.set(app.id, await fetchUsage(client, app.id, { today }));
+            }
         } catch (error) {
             console.warn(`analytics unavailable for ${app.name}: ${error.message}`);
         }
@@ -123,6 +123,7 @@ export async function collectStats({ client, vendorNumber, today, lookupMetadata
         yearlyRows,
         today,
         activeDevicesByApp,
+        usageByApp,
     });
 }
 

@@ -32,3 +32,32 @@ Integrations, role **Admin** or **Finance**) and add four repository secrets:
 workflow manually once (Actions → App Store stats → Run workflow).
 
 Tests: `node --test`
+
+### Usage analytics
+
+The same job requests Apple's **App Sessions Standard** reports and publishes
+`apps[].usage`: dated daily reports (recent 35 processing days), plus the latest
+weekly and monthly instances. It follows pagination, reads every gzip TSV segment,
+and replaces each event-date partition when a newer processing date corrects it.
+Daily figures are labelled provisional until the report's five-day completeness
+window has elapsed. Dates without reports remain absent, never zero-filled.
+
+`status` distinguishes `available`, `unavailable` (not yet generated / possibly
+below Apple's privacy threshold), and `error` (collection failed). A first ongoing
+request is asynchronous: rerun the daily workflow after Apple prepares reports.
+HTTP failures are logged without publishing API responses or signed URLs.
+
+Sessions and device counts cover **only users who opted in**. `deviceCountSum`
+is the sum of row-level Unique Devices; devices may occur in more than one
+version/dimension, so it must not be labelled exact DAU, WAU, or MAU. Weekly and
+monthly figures come from their own reports, not sums of daily unique counts.
+The dashboard does not infer J7/J30 retention from these aggregates; consult
+App Store Connect's Retention view instead. No SDK or app release is required.
+
+After deploying this change, run **Actions → App Store stats → Run workflow**
+(or wait for the daily schedule). Local collection requires the four ASC variables
+listed above; the repository's GitHub secrets are not available locally.
+
+Apple references: [App Sessions](https://developer.apple.com/documentation/analytics-reports/app-sessions),
+[corrections](https://developer.apple.com/documentation/analytics-reports/data-completeness-corrections),
+[privacy thresholds](https://developer.apple.com/documentation/analytics-reports/privacy).

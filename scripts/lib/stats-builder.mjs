@@ -89,7 +89,7 @@ export function preRetentionRows(yearlyRows, countedRows) {
     return extra;
 }
 
-export function buildStats({ apps, monthlyRows, dailyRows, yearlyRows = [], today, activeDevicesByApp = new Map() }) {
+export function buildStats({ apps, monthlyRows, dailyRows, yearlyRows = [], today, activeDevicesByApp = new Map(), usageByApp = new Map() }) {
     const end = daysAgo(today, 1);
     const start = daysAgo(today, 90);
     // Apple publishes a month's MONTHLY report ~5 days after that month ends,
@@ -138,6 +138,7 @@ export function buildStats({ apps, monthlyRows, dailyRows, yearlyRows = [], toda
             monthly: monthlyDownloadSeries(countedRows, app.id, today.slice(0, 7)),
             updates: { total: totalUpdates.get(app.id) ?? 0 },
             activeDevices: activeDevicesByApp.get(app.id) ?? null,
+            usage: usageByApp.get(app.id) ?? null,
         };
     });
     entries.sort((a, b) => b.downloads.total - a.downloads.total);

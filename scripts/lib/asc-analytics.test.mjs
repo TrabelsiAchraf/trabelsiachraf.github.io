@@ -1,136 +1,90 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { gzipSync } from "node:zlib";
-import { ensureReportRequest, latestActiveDevices, parseActiveDevicesCsv } from "./asc-analytics.mjs";
+import { ensureReportRequest, fetchAppUsage, parseSessionsTsv } from "./asc-analytics.mjs";
 
-test("parseActiveDevicesCsv sums the latest date across dimensions", () => {
-  const csv = [
-    "Date,App Name,Platform,Active Devices",
-    "2026-08-07,Adhkar,iPhone,20",
-    "2026-08-08,Adhkar,iPhone,25",
-    "2026-08-08,Adhkar,iPad,6",
-  ].join("\n");
-  assert.equal(parseActiveDevicesCsv(csv), 31);
+const tsv = (...rows) => "Date\tApp Name\tSessions\tUnique Devices\r\n" + rows.map(r => r.join("\t")).join("\r\n");
+const instance = (id, processingDate, granularity = "DAILY") => ({ id, attributes: { processingDate, granularity } });
+function fixture({ instances = [instance("a", "2026-10-16")], bodies = { a: [tsv(["2026-10-15", "App", 8, 5])] } } = {}) {
+    return {
+        client: {
+            getJson: async path => {
+                if (path.includes("/analyticsReportRequests?")) return { data: [{ id: "req", attributes: { accessType: "ONGOING" } }] };
+                if (path.includes("/reports?")) return { data: [{ id: "wrong", attributes: { name: "App Sessions Detailed" } }], links: { next: "https://api.appstoreconnect.apple.com/v1/reports-page2" } };
+                if (path === "/v1/reports-page2") return { data: [{ id: "report", attributes: { name: "App Sessions Standard" } }] };
+                if (path.includes("/instances?")) return { data: instances.filter(i => path.endsWith(i.attributes.granularity)) };
+                const match = path.match(/analyticsReportInstances\/(.+)\/segments/);
+                if (match) return { data: bodies[match[1]].map((_, n) => ({ attributes: { url: `https://example.test/${match[1]}/${n}` } })) };
+                throw new Error(`Unexpected path ${path}`);
+            },
+        },
+        fetchImpl: async url => {
+            const [id, n] = new URL(url).pathname.slice(1).split("/");
+            return new Response(gzipSync(bodies[id][Number(n)]));
+        },
+    };
+}
+
+test("parses Apple TSV with BOM, CRLF and quoted names containing tabs/newlines", () => {
+    assert.deepEqual(parseSessionsTsv('\uFEFF' + tsv(["2026-10-15", '"My\tApp\nName"', 8, 5])),
+        [{ date: "2026-10-15", sessions: 8, deviceCountSum: 5 }]);
 });
-
-test("parseActiveDevicesCsv returns null on missing column or empty data", () => {
-  assert.equal(parseActiveDevicesCsv("Date,Other\n2026-08-08,5"), null);
-  assert.equal(parseActiveDevicesCsv("Date,Active Devices"), null);
-  assert.equal(parseActiveDevicesCsv(""), null);
+test("rejects unexpected schemas and missing/invalid counts instead of inventing zero", () => {
+    for (const body of ["", "Date,Active Devices\n2026-10-15,5", tsv(["2026-10-15", "App", "", 5]), tsv(["2026-10-15", "App", "NaN", 5])]) {
+        assert.throws(() => parseSessionsTsv(body));
+    }
 });
-
-test("ensureReportRequest finds an existing ONGOING request", async () => {
-  const client = {
-    getJson: async (path) => {
-      assert.match(path, /\/v1\/apps\/111\/analyticsReportRequests/);
-      return { data: [{ id: "req-1", attributes: { accessType: "ONGOING" } }] };
-    },
-    postJson: async () => { throw new Error("must not create"); },
-  };
-  assert.equal(await ensureReportRequest(client, "111"), "req-1");
+test("reads standard report on next page, all segments, and replaces corrected date partitions", async () => {
+    const { client, fetchImpl } = fixture({
+        instances: [instance("b", "2026-10-16"), instance("a", "2026-10-15")],
+        bodies: {
+            a: [tsv(["2026-10-10", "App", 20, 8], ["2026-10-09", "App", 7, 5])],
+            b: [tsv(["2026-10-10", "App", 10, 5]), tsv(["2026-10-10", "App", 12, 6], ["2026-10-15", "App", 6, 5])],
+        },
+    });
+    const result = await fetchAppUsage(client, "111", { fetchImpl, today: "2026-10-17" });
+    assert.equal(result.status, "available");
+    assert.deepEqual(result.daily.map(r => [r.date, r.sessions, r.deviceCountSum, r.provisional]), [
+        ["2026-10-09", 7, 5, false], ["2026-10-10", 22, 11, false], ["2026-10-15", 6, 5, true],
+    ]);
 });
-
-test("ensureReportRequest creates the request when none exists", async () => {
-  let posted;
-  const client = {
-    getJson: async () => ({ data: [] }),
-    postJson: async (path, body) => {
-      posted = { path, body };
-      return { data: { id: "req-new" } };
-    },
-  };
-  assert.equal(await ensureReportRequest(client, "111"), "req-new");
-  assert.equal(posted.path, "/v1/analyticsReportRequests");
-  assert.equal(posted.body.data.attributes.accessType, "ONGOING");
-  assert.equal(posted.body.data.relationships.app.data.id, "111");
+test("weekly data can exist without daily data and is not converted to a daily average", async () => {
+    const { client, fetchImpl } = fixture({ instances: [instance("a", "2026-10-16", "WEEKLY")] });
+    const result = await fetchAppUsage(client, "111", { fetchImpl, today: "2026-10-17" });
+    assert.equal(result.status, "available");
+    assert.deepEqual(result.daily, []);
+    assert.equal(result.weekly[0].sessions, 8);
+    assert.equal(result.weekly[0].provisional, false);
 });
-
-test("latestActiveDevices walks reports -> instances -> segments and sums the CSV", async () => {
-  const csv = "Date,Active Devices\n2026-08-08,31";
-  const client = {
-    getJson: async (path) => {
-      if (path.includes("/reports")) return { data: [{ id: "rep-1", attributes: { name: "Active Devices", category: "APP_USAGE" } }] };
-      if (path.includes("/instances")) return { data: [
-        { id: "in-1", attributes: { granularity: "DAILY", processingDate: "2026-08-07" } },
-        { id: "in-2", attributes: { granularity: "DAILY", processingDate: "2026-08-08" } },
-      ] };
-      if (path.includes("/segments")) return { data: [{ attributes: { url: "https://signed.example/segment.gz" } }] };
-      throw new Error(`unexpected path ${path}`);
-    },
-  };
-  const fetchImpl = async (url) => {
-    assert.equal(url, "https://signed.example/segment.gz");
-    return new Response(gzipSync(csv), { status: 200 });
-  };
-  assert.equal(await latestActiveDevices(client, "req-1", fetchImpl), 31);
+test("creates an ongoing request; no generated report is unavailable, not zero", async () => {
+    let posted;
+    const client = { getJson: async () => ({ data: [] }), postJson: async (path, body) => { posted = body; return { data: { id: "new" } }; } };
+    const result = await fetchAppUsage(client, "111");
+    assert.equal(posted.data.attributes.accessType, "ONGOING");
+    assert.equal(result.status, "unavailable");
+    assert.deepEqual(result.daily, []);
 });
-
-test("latestActiveDevices returns null when any step yields nothing", async () => {
-  const noReports = { getJson: async () => ({ data: [] }) };
-  assert.equal(await latestActiveDevices(noReports, "req-1", async () => new Response("", { status: 200 })), null);
-  const missing = { getJson: async () => null };
-  assert.equal(await latestActiveDevices(missing, "req-1", async () => new Response("", { status: 200 })), null);
+test("replaces an inactive ongoing request", async () => {
+    const client = { getJson: async () => ({ data: [{ id: "old", attributes: { accessType: "ONGOING", stoppedDueToInactivity: true } }] }), postJson: async () => ({ data: { id: "new" } }) };
+    assert.equal(await ensureReportRequest(client, "111"), "new");
 });
-
-test("ensureReportRequest returns null when client.getJson throws", async () => {
-  const client = {
-    getJson: async () => { throw new Error("403 Forbidden"); },
-    postJson: async () => { throw new Error("must not reach"); },
-  };
-  assert.equal(await ensureReportRequest(client, "111"), null);
+test("API errors remain distinct from missing reports and do not leak into public data", async () => {
+    const client = { getJson: async () => { throw new Error("403 secret response"); } };
+    const result = await fetchAppUsage(client, "111");
+    assert.equal(result.status, "error");
+    assert.ok(!JSON.stringify(result).includes("secret"));
 });
-
-test("ensureReportRequest returns null when client.postJson throws", async () => {
-  const client = {
-    getJson: async () => ({ data: [] }),
-    postJson: async () => { throw new Error("429 Rate Limit"); },
-  };
-  assert.equal(await ensureReportRequest(client, "111"), null);
+test("one failed segment invalidates the collection instead of publishing partial totals", async () => {
+    const { client } = fixture();
+    for (const response of [new Response("bad gzip"), new Response("unavailable", { status: 403 })]) {
+        const result = await fetchAppUsage(client, "111", { fetchImpl: async () => response, today: "2026-10-17" });
+        assert.equal(result.status, "error");
+        assert.deepEqual(result.daily, []);
+    }
 });
-
-test("latestActiveDevices returns null when client.getJson throws", async () => {
-  const client = {
-    getJson: async () => { throw new Error("403 Forbidden"); },
-  };
-  assert.equal(await latestActiveDevices(client, "req-1", async () => new Response("", { status: 200 })), null);
-});
-
-test("latestActiveDevices returns null when segment download returns non-gzip body", async () => {
-  const csv = "Date,Active Devices\n2026-08-08,31";
-  const client = {
-    getJson: async (path) => {
-      if (path.includes("/reports")) return { data: [{ id: "rep-1", attributes: { name: "Active Devices", category: "APP_USAGE" } }] };
-      if (path.includes("/instances")) return { data: [{ id: "in-1", attributes: { granularity: "DAILY", processingDate: "2026-08-08" } }] };
-      if (path.includes("/segments")) return { data: [{ attributes: { url: "https://signed.example/segment.gz" } }] };
-      throw new Error(`unexpected path ${path}`);
-    },
-  };
-  const fetchImpl = async (url) => {
-    // Return non-gzip body, will cause gunzipSync to throw
-    return new Response("not-gzip-data", { status: 200 });
-  };
-  assert.equal(await latestActiveDevices(client, "req-1", fetchImpl), null);
-});
-
-test("latestActiveDevices returns null when instances list is empty", async () => {
-  const client = {
-    getJson: async (path) => {
-      if (path.includes("/reports")) return { data: [{ id: "rep-1", attributes: { name: "Active Devices", category: "APP_USAGE" } }] };
-      if (path.includes("/instances")) return { data: [] };
-      throw new Error(`unexpected path ${path}`);
-    },
-  };
-  assert.equal(await latestActiveDevices(client, "req-1", async () => new Response("", { status: 200 })), null);
-});
-
-test("latestActiveDevices returns null when segments list has no URL", async () => {
-  const client = {
-    getJson: async (path) => {
-      if (path.includes("/reports")) return { data: [{ id: "rep-1", attributes: { name: "Active Devices", category: "APP_USAGE" } }] };
-      if (path.includes("/instances")) return { data: [{ id: "in-1", attributes: { granularity: "DAILY", processingDate: "2026-08-08" } }] };
-      if (path.includes("/segments")) return { data: [{ attributes: {} }] };
-      throw new Error(`unexpected path ${path}`);
-    },
-  };
-  assert.equal(await latestActiveDevices(client, "req-1", async () => new Response("", { status: 200 })), null);
+test("rejects pagination links outside Apple before authenticated requests", async () => {
+    let calls = 0;
+    const client = { getJson: async () => { calls++; return { data: [], links: { next: "https://other.test/v1" } }; } };
+    assert.equal((await fetchAppUsage(client, "111")).status, "error");
+    assert.equal(calls, 1);
 });
