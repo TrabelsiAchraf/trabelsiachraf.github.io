@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T16:59:45.073Z",
+  "lastUpdated": "2026-10-18T21:55:28.560Z",
   "totals": {
     "downloads": 496
   },
@@ -474,7 +474,38 @@
       "updates": {
         "total": 284
       },
-      "activeDevices": null
+      "activeDevices": null,
+      "usage": {
+        "source": "App Sessions Standard",
+        "optInOnly": true,
+        "daily": [],
+        "weekly": [
+          {
+            "date": "2026-09-28",
+            "sessions": 36,
+            "deviceCountSum": 11,
+            "processingDate": "2026-10-09",
+            "provisional": false
+          },
+          {
+            "date": "2026-10-05",
+            "sessions": 20,
+            "deviceCountSum": 9,
+            "processingDate": "2026-10-16",
+            "provisional": false
+          }
+        ],
+        "monthly": [
+          {
+            "date": "2026-09-01",
+            "sessions": 122,
+            "deviceCountSum": 12,
+            "processingDate": "2026-10-05",
+            "provisional": false
+          }
+        ],
+        "status": "available"
+      }
     },
     {
       "id": "6768824373",
@@ -931,7 +962,38 @@
       "updates": {
         "total": 64
       },
-      "activeDevices": null
+      "activeDevices": null,
+      "usage": {
+        "source": "App Sessions Standard",
+        "optInOnly": true,
+        "daily": [],
+        "weekly": [
+          {
+            "date": "2026-09-14",
+            "sessions": 16,
+            "deviceCountSum": 7,
+            "processingDate": "2026-09-25",
+            "provisional": false
+          },
+          {
+            "date": "2026-09-21",
+            "sessions": 17,
+            "deviceCountSum": 6,
+            "processingDate": "2026-10-02",
+            "provisional": false
+          }
+        ],
+        "monthly": [
+          {
+            "date": "2026-09-01",
+            "sessions": 46,
+            "deviceCountSum": 14,
+            "processingDate": "2026-10-05",
+            "provisional": false
+          }
+        ],
+        "status": "available"
+      }
     },
     {
       "id": "6761739430",
@@ -1392,7 +1454,23 @@
       "updates": {
         "total": 16
       },
-      "activeDevices": null
+      "activeDevices": null,
+      "usage": {
+        "source": "App Sessions Standard",
+        "optInOnly": true,
+        "daily": [],
+        "weekly": [],
+        "monthly": [
+          {
+            "date": "2026-09-01",
+            "sessions": 31,
+            "deviceCountSum": 7,
+            "processingDate": "2026-10-05",
+            "provisional": false
+          }
+        ],
+        "status": "available"
+      }
     },
     {
       "id": "6816525366",
@@ -1806,7 +1884,15 @@
       "updates": {
         "total": 0
       },
-      "activeDevices": null
+      "activeDevices": null,
+      "usage": {
+        "source": "App Sessions Standard",
+        "optInOnly": true,
+        "daily": [],
+        "weekly": [],
+        "monthly": [],
+        "status": "unavailable"
+      }
     }
   ]
 }
