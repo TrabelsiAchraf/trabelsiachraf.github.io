@@ -59,15 +59,15 @@ const GLOSSARY = {
     },
     updates: {
         term: "Updates installed",
-        text: "How many times an existing user installed a newer version of the app. It is not new users — it is a retention signal: people who still have the app and keep it current. A brand-new app that has never shipped a second version shows 0.",
+        text: "How many times an existing user installed a newer version of the app. Updates may install automatically; they do not prove that people opened the app. A brand-new app that has never shipped a second version shows 0.",
     },
     redownloads: {
         term: "Re-downloads",
         text: "Installs by an Apple ID that had already downloaded the app before — a second device, a restored backup, or a reinstall after deleting it. Apple reports these separately, so they never inflate the download count.",
     },
     active: {
-        term: "Active devices",
-        text: "Devices that opened the app recently, from Apple's App Analytics. It only counts users who agreed to share analytics with developers, so it is a partial sample — and Apple simply does not publish it for low-traffic apps, in which case it shows as “not available”.",
+        term: "App usage",
+        text: "Sessions come from Apple’s opt-in App Sessions Standard reports. Device counts are unique within each report row, but their sum is not an exact daily active user count. Missing reports can reflect privacy thresholds, preparation delays, or collection errors; missing does not mean zero.",
     },
 };
 
@@ -533,13 +533,44 @@ function appCard(app) {
                 : "none"));
         facts.appendChild(row);
     }
-    const activeRow = el("li");
-    activeRow.append(labelWithInfo("Active devices", "active", "fact-label"),
-        el("span", "fact-value", app.activeDevices == null
-            ? "not published by Apple"
-            : `${formatNumber(app.activeDevices)} (opt-in sample)`));
-    facts.appendChild(activeRow);
     if (facts.children.length > 0) card.appendChild(facts);
+
+    /* Usage is an opt-in sample, separate from exact download counts. */
+    const usage = app.usage;
+    card.appendChild(el("h3", "stat-subtitle", "Actual app usage · Apple opt-in sample"));
+    if (usage?.status === "available") {
+        card.appendChild(el("p", "", "Sessions measure app use, not downloads. Device counts are summed across Apple's report rows: the same device can appear in multiple rows, so these are not exact daily active users. Recent daily reports may change for five days. Missing dates mean unavailable, not zero."));
+        for (const [key, title] of [["daily", "Daily usage"], ["weekly", "Weekly usage"], ["monthly", "Monthly usage"]]) {
+            const rows = usage[key] ?? [];
+            const details = el("details");
+            details.open = false;
+            const latest = rows.at(-1);
+            details.appendChild(el("summary", "", latest
+                ? `${title} · ${latest.date} · ${formatNumber(latest.sessions)} sessions${latest.provisional ? " (provisional)" : ""}`
+                : title));
+            if (!rows.length) {
+                details.appendChild(el("p", "", "No report available for this period."));
+            } else {
+                const list = el("ul", "stat-facts");
+                for (const point of rows.slice(-30).reverse()) {
+                    const row = el("li");
+                    row.append(el("span", "fact-label", `${key === "daily" ? "" : "From "}${point.date}${point.provisional ? " · provisional" : ""}`),
+                        el("span", "fact-value", `${formatNumber(point.sessions)} sessions · ${formatNumber(point.deviceCountSum)} device count (row sum)`));
+                    list.appendChild(row);
+                }
+                details.appendChild(list);
+            }
+            card.appendChild(details);
+        }
+    } else {
+        const message = usage?.status === "error"
+            ? "Usage collection failed. Download statistics remain available; this does not mean zero active users."
+            : usage?.status === "unavailable"
+                ? "No usage report available yet. Apple may still be preparing it, or the opt-in sample may be below its privacy threshold. This does not mean zero active users."
+                : "Usage has not been collected by the updated pipeline yet. This does not mean zero active users.";
+        card.appendChild(el("p", "", message));
+    }
+    card.appendChild(el("p", "", "Apple only includes people who share analytics. These reports do not provide an exact total audience or a reliable J7/J30 retention rate here; use App Store Connect's Retention view for that metric."));
 
     /* Devices */
     const devices = Object.entries(app.devices ?? {});

@@ -178,3 +178,15 @@ test("hitting Apple's retention boundary stops the walk instead of failing the r
   assert.ok(!probed.includes("2025-07"));
   assert.equal(stats.apps[0].downloads.total, 100); // run completes normally
 });
+
+test("collectStats publishes dated usage and its availability status without claiming exact active devices", async () => {
+  const usage = { status: "available", optInOnly: true, source: "App Sessions Standard", daily: [{ date: "2026-08-08", sessions: 10, deviceCountSum: 6, provisional: true }], weekly: [], monthly: [] };
+  const client = { listApps: async () => [{ id: "111", name: "App" }], salesReport: async () => null };
+  const stats = await collectStats({ client, vendorNumber: "888", today: "2026-08-10", lookupMetadata: async () => new Map(), fetchUsage: async (_, id, options) => {
+    assert.equal(id, "111");
+    assert.equal(options.today, "2026-08-10");
+    return usage;
+  } });
+  assert.deepEqual(stats.apps[0].usage, usage);
+  assert.equal(stats.apps[0].activeDevices, null);
+});
