@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kidoo</title>
+<style>
+  body { font: 17px/1.5 -apple-system, system-ui, sans-serif; margin: 0; padding: 32px 20px; color: #1d2b26; background: #f4f1ea; }
+  main { max-width: 520px; margin: 0 auto; }
+  .code { font: 600 24px ui-monospace, monospace; letter-spacing: 2px; }
+  @media (prefers-color-scheme: dark) { body { color: #e8ede9; background: #1b2420; } }
+</style>
+</head>
+<body>
+<main id="page">
+  <h1>Page introuvable</h1>
+</main>
+<script>
+  // An invitation link opened without Kidoo: say how to join with the code instead.
+  if (location.pathname.startsWith("/kidoo/join/")) {
+    document.getElementById("page").innerHTML =
+      "<h1>Rejoindre une famille sur Kidoo</h1>" +
+      "<p>Installez Kidoo sur cet iPhone, puis ouvrez de nouveau ce lien, ou tapez le code reçu dans Kidoo › Rejoindre une famille.</p>" +
+      "<hr><h2>Join a family on Kidoo</h2>" +
+      "<p>Install Kidoo on this iPhone, then open this link again, or type the code you received in Kidoo › Join a family.</p>";
+  }
+</script>
+</body>
+</html>

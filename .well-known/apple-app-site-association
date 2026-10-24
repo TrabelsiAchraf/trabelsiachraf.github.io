@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["QN66UQNDZR.com.achraftrabelsi.kidoo"],
+        "components": [{ "/": "/kidoo/join/*", "comment": "Kidoo family invitations" }]
+      }
+    ]
+  }
+}
