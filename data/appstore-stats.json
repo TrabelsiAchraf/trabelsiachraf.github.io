@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-06T20:08:46.485Z",
+  "lastUpdated": "2026-11-07T18:23:17.288Z",
   "totals": {
-    "downloads": 619
+    "downloads": 628
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 2
       },
       "downloads": {
-        "total": 330,
+        "total": 331,
         "priorToSeries": 86,
         "last7Days": 7,
-        "last30Days": 61,
+        "last30Days": 59,
         "daily": [
-          {
-            "date": "2026-08-08",
-            "units": 0
-          },
           {
             "date": "2026-08-09",
             "units": 0
@@ -390,14 +386,18 @@
           {
             "date": "2026-11-05",
             "units": 0
+          },
+          {
+            "date": "2026-11-06",
+            "units": 1
           }
         ]
       },
       "redownloads": {
-        "total": 43
+        "total": 44
       },
       "devices": {
-        "iPhone": 301,
+        "iPhone": 302,
         "iPad": 15,
         "Desktop": 14
       },
@@ -405,7 +405,7 @@
         "US": 127,
         "GB": 75,
         "FR": 33,
-        "CA": 23,
+        "CA": 24,
         "AU": 15,
         "IN": 6,
         "SA": 6,
@@ -473,7 +473,7 @@
         },
         {
           "month": "2026-11",
-          "units": 4
+          "units": 5
         }
       ],
       "updates": {
@@ -541,15 +541,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 160,
+        "total": 165,
         "priorToSeries": 0,
-        "last7Days": 19,
-        "last30Days": 68,
+        "last7Days": 17,
+        "last30Days": 70,
         "daily": [
-          {
-            "date": "2026-08-08",
-            "units": 0
-          },
           {
             "date": "2026-08-09",
             "units": 0
@@ -905,6 +901,10 @@
           {
             "date": "2026-11-05",
             "units": 3
+          },
+          {
+            "date": "2026-11-06",
+            "units": 5
           }
         ]
       },
@@ -912,13 +912,13 @@
         "total": 15
       },
       "devices": {
-        "iPhone": 144,
+        "iPhone": 149,
         "iPad": 14,
         "Desktop": 2
       },
       "countries": {
-        "FR": 48,
-        "US": 26,
+        "FR": 49,
+        "US": 28,
         "SN": 22,
         "CA": 5,
         "GH": 4,
@@ -928,15 +928,15 @@
         "DZ": 3,
         "IQ": 3,
         "BE": 3,
+        "EG": 3,
         "BJ": 3,
+        "OM": 2,
         "ML": 2,
         "MA": 2,
         "MR": 2,
         "GM": 2,
-        "EG": 2,
         "NG": 2,
         "MY": 2,
-        "OM": 1,
         "NZ": 1,
         "TN": 1,
         "CM": 1,
@@ -982,7 +982,7 @@
         },
         {
           "month": "2026-11",
-          "units": 9
+          "units": 14
         }
       ],
       "updates": {
@@ -1064,15 +1064,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 126,
+        "total": 129,
         "priorToSeries": 0,
-        "last7Days": 9,
+        "last7Days": 12,
         "last30Days": 62,
         "daily": [
-          {
-            "date": "2026-08-08",
-            "units": 0
-          },
           {
             "date": "2026-08-09",
             "units": 0
@@ -1428,6 +1424,10 @@
           {
             "date": "2026-11-05",
             "units": 2
+          },
+          {
+            "date": "2026-11-06",
+            "units": 3
           }
         ]
       },
@@ -1435,10 +1435,10 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 126
+        "Desktop": 129
       },
       "countries": {
-        "US": 24,
+        "US": 26,
         "FR": 22,
         "CN": 12,
         "BE": 9,
@@ -1447,8 +1447,8 @@
         "ES": 4,
         "DE": 4,
         "CA": 4,
+        "CH": 4,
         "PL": 3,
-        "CH": 3,
         "NL": 2,
         "GB": 2,
         "RU": 2,
@@ -1502,7 +1502,7 @@
         },
         {
           "month": "2026-11",
-          "units": 5
+          "units": 8
         }
       ],
       "updates": {
@@ -1560,10 +1560,6 @@
         "last30Days": 1,
         "daily": [
           {
-            "date": "2026-08-08",
-            "units": 0
-          },
-          {
             "date": "2026-08-09",
             "units": 0
           },
@@ -1917,6 +1913,10 @@
           },
           {
             "date": "2026-11-05",
+            "units": 0
+          },
+          {
+            "date": "2026-11-06",
             "units": 0
           }
         ]
@@ -1972,10 +1972,6 @@
         "last30Days": 0,
         "daily": [
           {
-            "date": "2026-08-08",
-            "units": 0
-          },
-          {
             "date": "2026-08-09",
             "units": 0
           },
@@ -2329,6 +2325,10 @@
           },
           {
             "date": "2026-11-05",
+            "units": 0
+          },
+          {
+            "date": "2026-11-06",
             "units": 0
           }
         ]
