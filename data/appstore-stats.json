@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-09T23:12:58.799Z",
+  "lastUpdated": "2026-11-10T20:39:10.731Z",
   "totals": {
-    "downloads": 643
+    "downloads": 656
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 2
       },
       "downloads": {
-        "total": 335,
+        "total": 337,
         "priorToSeries": 86,
-        "last7Days": 6,
-        "last30Days": 58,
+        "last7Days": 8,
+        "last30Days": 57,
         "daily": [
-          {
-            "date": "2026-08-11",
-            "units": 1
-          },
           {
             "date": "2026-08-12",
             "units": 1
@@ -390,6 +386,10 @@
           {
             "date": "2026-11-08",
             "units": 2
+          },
+          {
+            "date": "2026-11-09",
+            "units": 2
           }
         ]
       },
@@ -397,7 +397,7 @@
         "total": 45
       },
       "devices": {
-        "iPhone": 306,
+        "iPhone": 308,
         "iPad": 15,
         "Desktop": 14
       },
@@ -406,12 +406,12 @@
         "GB": 76,
         "FR": 34,
         "CA": 24,
-        "AU": 15,
+        "AU": 16,
         "IN": 6,
         "SA": 6,
         "BE": 6,
+        "MA": 5,
         "CH": 4,
-        "MA": 4,
         "RU": 3,
         "IE": 3,
         "DE": 3,
@@ -473,7 +473,7 @@
         },
         {
           "month": "2026-11",
-          "units": 9
+          "units": 11
         }
       ],
       "updates": {
@@ -501,13 +501,6 @@
           }
         ],
         "monthly": [
-          {
-            "date": "2026-09-01",
-            "sessions": 122,
-            "deviceCountSum": 12,
-            "processingDate": "2026-10-05",
-            "provisional": false
-          },
           {
             "date": "2026-10-01",
             "sessions": 123,
@@ -537,19 +530,15 @@
         ],
         "minimumOsVersion": "17.0",
         "sizeBytes": 5772288,
-        "rating": 0,
-        "ratingCount": 0
+        "rating": 5,
+        "ratingCount": 1
       },
       "downloads": {
-        "total": 173,
+        "total": 179,
         "priorToSeries": 0,
-        "last7Days": 21,
-        "last30Days": 76,
+        "last7Days": 24,
+        "last30Days": 80,
         "daily": [
-          {
-            "date": "2026-08-11",
-            "units": 0
-          },
           {
             "date": "2026-08-12",
             "units": 0
@@ -905,6 +894,10 @@
           {
             "date": "2026-11-08",
             "units": 3
+          },
+          {
+            "date": "2026-11-09",
+            "units": 6
           }
         ]
       },
@@ -912,12 +905,12 @@
         "total": 15
       },
       "devices": {
-        "iPhone": 157,
+        "iPhone": 163,
         "iPad": 14,
         "Desktop": 2
       },
       "countries": {
-        "FR": 51,
+        "FR": 54,
         "US": 29,
         "SN": 22,
         "CA": 5,
@@ -925,6 +918,7 @@
         "SA": 4,
         "CI": 4,
         "NE": 3,
+        "MA": 3,
         "MR": 3,
         "DZ": 3,
         "IQ": 3,
@@ -934,7 +928,6 @@
         "AE": 3,
         "OM": 2,
         "ML": 2,
-        "MA": 2,
         "GM": 2,
         "NG": 2,
         "JO": 2,
@@ -953,6 +946,8 @@
         "XK": 1,
         "KG": 1,
         "DK": 1,
+        "SG": 1,
+        "GB": 1,
         "LK": 1
       },
       "monthly": [
@@ -982,7 +977,7 @@
         },
         {
           "month": "2026-11",
-          "units": 22
+          "units": 28
         }
       ],
       "updates": {
@@ -1026,13 +1021,6 @@
         ],
         "monthly": [
           {
-            "date": "2026-09-01",
-            "sessions": 46,
-            "deviceCountSum": 14,
-            "processingDate": "2026-10-05",
-            "provisional": false
-          },
-          {
             "date": "2026-10-01",
             "sessions": 71,
             "deviceCountSum": 24,
@@ -1064,15 +1052,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 132,
+        "total": 134,
         "priorToSeries": 0,
-        "last7Days": 10,
-        "last30Days": 64,
+        "last7Days": 11,
+        "last30Days": 65,
         "daily": [
-          {
-            "date": "2026-08-11",
-            "units": 0
-          },
           {
             "date": "2026-08-12",
             "units": 0
@@ -1428,6 +1412,10 @@
           {
             "date": "2026-11-08",
             "units": 1
+          },
+          {
+            "date": "2026-11-09",
+            "units": 2
           }
         ]
       },
@@ -1435,11 +1423,11 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 132
+        "Desktop": 134
       },
       "countries": {
-        "US": 26,
-        "FR": 24,
+        "US": 27,
+        "FR": 25,
         "CN": 12,
         "BE": 9,
         "IN": 9,
@@ -1503,7 +1491,7 @@
         },
         {
           "month": "2026-11",
-          "units": 11
+          "units": 13
         }
       ],
       "updates": {
@@ -1517,13 +1505,6 @@
         "weekly": [],
         "monthly": [
           {
-            "date": "2026-09-01",
-            "sessions": 31,
-            "deviceCountSum": 7,
-            "processingDate": "2026-10-05",
-            "provisional": false
-          },
-          {
             "date": "2026-10-01",
             "sessions": 31,
             "deviceCountSum": 5,
@@ -1532,6 +1513,423 @@
           }
         ],
         "status": "available"
+      }
+    },
+    {
+      "id": "6827770032",
+      "name": "Kidoo : Agenda familial",
+      "bundleId": "com.achraftrabelsi.kidoo",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/cb/0a/66cb0acf-3b8a-0e98-c7bb-7d5846f13277/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "meta": {
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/cb/0a/66cb0acf-3b8a-0e98-c7bb-7d5846f13277/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+        "releaseDate": "2026-11-09",
+        "version": "1.1.0",
+        "versionDate": "2026-11-10",
+        "genre": "Lifestyle",
+        "languages": [
+          "EN",
+          "FR"
+        ],
+        "minimumOsVersion": "17.0",
+        "sizeBytes": 24330240,
+        "rating": 0,
+        "ratingCount": 0
+      },
+      "downloads": {
+        "total": 3,
+        "priorToSeries": 0,
+        "last7Days": 3,
+        "last30Days": 3,
+        "daily": [
+          {
+            "date": "2026-08-12",
+            "units": 0
+          },
+          {
+            "date": "2026-08-13",
+            "units": 0
+          },
+          {
+            "date": "2026-08-14",
+            "units": 0
+          },
+          {
+            "date": "2026-08-15",
+            "units": 0
+          },
+          {
+            "date": "2026-08-16",
+            "units": 0
+          },
+          {
+            "date": "2026-08-17",
+            "units": 0
+          },
+          {
+            "date": "2026-08-18",
+            "units": 0
+          },
+          {
+            "date": "2026-08-19",
+            "units": 0
+          },
+          {
+            "date": "2026-08-20",
+            "units": 0
+          },
+          {
+            "date": "2026-08-21",
+            "units": 0
+          },
+          {
+            "date": "2026-08-22",
+            "units": 0
+          },
+          {
+            "date": "2026-08-23",
+            "units": 0
+          },
+          {
+            "date": "2026-08-24",
+            "units": 0
+          },
+          {
+            "date": "2026-08-25",
+            "units": 0
+          },
+          {
+            "date": "2026-08-26",
+            "units": 0
+          },
+          {
+            "date": "2026-08-27",
+            "units": 0
+          },
+          {
+            "date": "2026-08-28",
+            "units": 0
+          },
+          {
+            "date": "2026-08-29",
+            "units": 0
+          },
+          {
+            "date": "2026-08-30",
+            "units": 0
+          },
+          {
+            "date": "2026-08-31",
+            "units": 0
+          },
+          {
+            "date": "2026-09-01",
+            "units": 0
+          },
+          {
+            "date": "2026-09-02",
+            "units": 0
+          },
+          {
+            "date": "2026-09-03",
+            "units": 0
+          },
+          {
+            "date": "2026-09-04",
+            "units": 0
+          },
+          {
+            "date": "2026-09-05",
+            "units": 0
+          },
+          {
+            "date": "2026-09-06",
+            "units": 0
+          },
+          {
+            "date": "2026-09-07",
+            "units": 0
+          },
+          {
+            "date": "2026-09-08",
+            "units": 0
+          },
+          {
+            "date": "2026-09-09",
+            "units": 0
+          },
+          {
+            "date": "2026-09-10",
+            "units": 0
+          },
+          {
+            "date": "2026-09-11",
+            "units": 0
+          },
+          {
+            "date": "2026-09-12",
+            "units": 0
+          },
+          {
+            "date": "2026-09-13",
+            "units": 0
+          },
+          {
+            "date": "2026-09-14",
+            "units": 0
+          },
+          {
+            "date": "2026-09-15",
+            "units": 0
+          },
+          {
+            "date": "2026-09-16",
+            "units": 0
+          },
+          {
+            "date": "2026-09-17",
+            "units": 0
+          },
+          {
+            "date": "2026-09-18",
+            "units": 0
+          },
+          {
+            "date": "2026-09-19",
+            "units": 0
+          },
+          {
+            "date": "2026-09-20",
+            "units": 0
+          },
+          {
+            "date": "2026-09-21",
+            "units": 0
+          },
+          {
+            "date": "2026-09-22",
+            "units": 0
+          },
+          {
+            "date": "2026-09-23",
+            "units": 0
+          },
+          {
+            "date": "2026-09-24",
+            "units": 0
+          },
+          {
+            "date": "2026-09-25",
+            "units": 0
+          },
+          {
+            "date": "2026-09-26",
+            "units": 0
+          },
+          {
+            "date": "2026-09-27",
+            "units": 0
+          },
+          {
+            "date": "2026-09-28",
+            "units": 0
+          },
+          {
+            "date": "2026-09-29",
+            "units": 0
+          },
+          {
+            "date": "2026-09-30",
+            "units": 0
+          },
+          {
+            "date": "2026-10-01",
+            "units": 0
+          },
+          {
+            "date": "2026-10-02",
+            "units": 0
+          },
+          {
+            "date": "2026-10-03",
+            "units": 0
+          },
+          {
+            "date": "2026-10-04",
+            "units": 0
+          },
+          {
+            "date": "2026-10-05",
+            "units": 0
+          },
+          {
+            "date": "2026-10-06",
+            "units": 0
+          },
+          {
+            "date": "2026-10-07",
+            "units": 0
+          },
+          {
+            "date": "2026-10-08",
+            "units": 0
+          },
+          {
+            "date": "2026-10-09",
+            "units": 0
+          },
+          {
+            "date": "2026-10-10",
+            "units": 0
+          },
+          {
+            "date": "2026-10-11",
+            "units": 0
+          },
+          {
+            "date": "2026-10-12",
+            "units": 0
+          },
+          {
+            "date": "2026-10-13",
+            "units": 0
+          },
+          {
+            "date": "2026-10-14",
+            "units": 0
+          },
+          {
+            "date": "2026-10-15",
+            "units": 0
+          },
+          {
+            "date": "2026-10-16",
+            "units": 0
+          },
+          {
+            "date": "2026-10-17",
+            "units": 0
+          },
+          {
+            "date": "2026-10-18",
+            "units": 0
+          },
+          {
+            "date": "2026-10-19",
+            "units": 0
+          },
+          {
+            "date": "2026-10-20",
+            "units": 0
+          },
+          {
+            "date": "2026-10-21",
+            "units": 0
+          },
+          {
+            "date": "2026-10-22",
+            "units": 0
+          },
+          {
+            "date": "2026-10-23",
+            "units": 0
+          },
+          {
+            "date": "2026-10-24",
+            "units": 0
+          },
+          {
+            "date": "2026-10-25",
+            "units": 0
+          },
+          {
+            "date": "2026-10-26",
+            "units": 0
+          },
+          {
+            "date": "2026-10-27",
+            "units": 0
+          },
+          {
+            "date": "2026-10-28",
+            "units": 0
+          },
+          {
+            "date": "2026-10-29",
+            "units": 0
+          },
+          {
+            "date": "2026-10-30",
+            "units": 0
+          },
+          {
+            "date": "2026-10-31",
+            "units": 0
+          },
+          {
+            "date": "2026-11-01",
+            "units": 0
+          },
+          {
+            "date": "2026-11-02",
+            "units": 0
+          },
+          {
+            "date": "2026-11-03",
+            "units": 0
+          },
+          {
+            "date": "2026-11-04",
+            "units": 0
+          },
+          {
+            "date": "2026-11-05",
+            "units": 0
+          },
+          {
+            "date": "2026-11-06",
+            "units": 0
+          },
+          {
+            "date": "2026-11-07",
+            "units": 0
+          },
+          {
+            "date": "2026-11-08",
+            "units": 0
+          },
+          {
+            "date": "2026-11-09",
+            "units": 3
+          }
+        ]
+      },
+      "redownloads": {
+        "total": 0
+      },
+      "devices": {
+        "iPhone": 3
+      },
+      "countries": {
+        "FR": 2,
+        "MA": 1
+      },
+      "monthly": [
+        {
+          "month": "2026-11",
+          "units": 3
+        }
+      ],
+      "updates": {
+        "total": 0
+      },
+      "activeDevices": null,
+      "usage": {
+        "source": "App Sessions Standard",
+        "optInOnly": true,
+        "daily": [],
+        "weekly": [],
+        "monthly": [],
+        "status": "unavailable"
       }
     },
     {
@@ -1561,10 +1959,6 @@
         "last30Days": 0,
         "daily": [
           {
-            "date": "2026-08-11",
-            "units": 0
-          },
-          {
             "date": "2026-08-12",
             "units": 0
           },
@@ -1918,6 +2312,10 @@
           },
           {
             "date": "2026-11-08",
+            "units": 0
+          },
+          {
+            "date": "2026-11-09",
             "units": 0
           }
         ]
@@ -1947,413 +2345,6 @@
           "units": 0
         }
       ],
-      "updates": {
-        "total": 0
-      },
-      "activeDevices": null,
-      "usage": {
-        "source": "App Sessions Standard",
-        "optInOnly": true,
-        "daily": [],
-        "weekly": [],
-        "monthly": [],
-        "status": "unavailable"
-      }
-    },
-    {
-      "id": "6827770032",
-      "name": "Kidoo : Agenda familial",
-      "bundleId": "com.achraftrabelsi.kidoo",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/e8/4f/5ee84f8e-ae40-d633-1539-510a0424c244/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-      "meta": {
-        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5e/e8/4f/5ee84f8e-ae40-d633-1539-510a0424c244/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/100x100bb.jpg",
-        "releaseDate": "2026-11-09",
-        "version": "1.0.0",
-        "versionDate": "2026-11-09",
-        "genre": "Lifestyle",
-        "languages": [
-          "EN",
-          "FR"
-        ],
-        "minimumOsVersion": "17.0",
-        "sizeBytes": 24096768,
-        "rating": 0,
-        "ratingCount": 0
-      },
-      "downloads": {
-        "total": 0,
-        "priorToSeries": 0,
-        "last7Days": 0,
-        "last30Days": 0,
-        "daily": [
-          {
-            "date": "2026-08-11",
-            "units": 0
-          },
-          {
-            "date": "2026-08-12",
-            "units": 0
-          },
-          {
-            "date": "2026-08-13",
-            "units": 0
-          },
-          {
-            "date": "2026-08-14",
-            "units": 0
-          },
-          {
-            "date": "2026-08-15",
-            "units": 0
-          },
-          {
-            "date": "2026-08-16",
-            "units": 0
-          },
-          {
-            "date": "2026-08-17",
-            "units": 0
-          },
-          {
-            "date": "2026-08-18",
-            "units": 0
-          },
-          {
-            "date": "2026-08-19",
-            "units": 0
-          },
-          {
-            "date": "2026-08-20",
-            "units": 0
-          },
-          {
-            "date": "2026-08-21",
-            "units": 0
-          },
-          {
-            "date": "2026-08-22",
-            "units": 0
-          },
-          {
-            "date": "2026-08-23",
-            "units": 0
-          },
-          {
-            "date": "2026-08-24",
-            "units": 0
-          },
-          {
-            "date": "2026-08-25",
-            "units": 0
-          },
-          {
-            "date": "2026-08-26",
-            "units": 0
-          },
-          {
-            "date": "2026-08-27",
-            "units": 0
-          },
-          {
-            "date": "2026-08-28",
-            "units": 0
-          },
-          {
-            "date": "2026-08-29",
-            "units": 0
-          },
-          {
-            "date": "2026-08-30",
-            "units": 0
-          },
-          {
-            "date": "2026-08-31",
-            "units": 0
-          },
-          {
-            "date": "2026-09-01",
-            "units": 0
-          },
-          {
-            "date": "2026-09-02",
-            "units": 0
-          },
-          {
-            "date": "2026-09-03",
-            "units": 0
-          },
-          {
-            "date": "2026-09-04",
-            "units": 0
-          },
-          {
-            "date": "2026-09-05",
-            "units": 0
-          },
-          {
-            "date": "2026-09-06",
-            "units": 0
-          },
-          {
-            "date": "2026-09-07",
-            "units": 0
-          },
-          {
-            "date": "2026-09-08",
-            "units": 0
-          },
-          {
-            "date": "2026-09-09",
-            "units": 0
-          },
-          {
-            "date": "2026-09-10",
-            "units": 0
-          },
-          {
-            "date": "2026-09-11",
-            "units": 0
-          },
-          {
-            "date": "2026-09-12",
-            "units": 0
-          },
-          {
-            "date": "2026-09-13",
-            "units": 0
-          },
-          {
-            "date": "2026-09-14",
-            "units": 0
-          },
-          {
-            "date": "2026-09-15",
-            "units": 0
-          },
-          {
-            "date": "2026-09-16",
-            "units": 0
-          },
-          {
-            "date": "2026-09-17",
-            "units": 0
-          },
-          {
-            "date": "2026-09-18",
-            "units": 0
-          },
-          {
-            "date": "2026-09-19",
-            "units": 0
-          },
-          {
-            "date": "2026-09-20",
-            "units": 0
-          },
-          {
-            "date": "2026-09-21",
-            "units": 0
-          },
-          {
-            "date": "2026-09-22",
-            "units": 0
-          },
-          {
-            "date": "2026-09-23",
-            "units": 0
-          },
-          {
-            "date": "2026-09-24",
-            "units": 0
-          },
-          {
-            "date": "2026-09-25",
-            "units": 0
-          },
-          {
-            "date": "2026-09-26",
-            "units": 0
-          },
-          {
-            "date": "2026-09-27",
-            "units": 0
-          },
-          {
-            "date": "2026-09-28",
-            "units": 0
-          },
-          {
-            "date": "2026-09-29",
-            "units": 0
-          },
-          {
-            "date": "2026-09-30",
-            "units": 0
-          },
-          {
-            "date": "2026-10-01",
-            "units": 0
-          },
-          {
-            "date": "2026-10-02",
-            "units": 0
-          },
-          {
-            "date": "2026-10-03",
-            "units": 0
-          },
-          {
-            "date": "2026-10-04",
-            "units": 0
-          },
-          {
-            "date": "2026-10-05",
-            "units": 0
-          },
-          {
-            "date": "2026-10-06",
-            "units": 0
-          },
-          {
-            "date": "2026-10-07",
-            "units": 0
-          },
-          {
-            "date": "2026-10-08",
-            "units": 0
-          },
-          {
-            "date": "2026-10-09",
-            "units": 0
-          },
-          {
-            "date": "2026-10-10",
-            "units": 0
-          },
-          {
-            "date": "2026-10-11",
-            "units": 0
-          },
-          {
-            "date": "2026-10-12",
-            "units": 0
-          },
-          {
-            "date": "2026-10-13",
-            "units": 0
-          },
-          {
-            "date": "2026-10-14",
-            "units": 0
-          },
-          {
-            "date": "2026-10-15",
-            "units": 0
-          },
-          {
-            "date": "2026-10-16",
-            "units": 0
-          },
-          {
-            "date": "2026-10-17",
-            "units": 0
-          },
-          {
-            "date": "2026-10-18",
-            "units": 0
-          },
-          {
-            "date": "2026-10-19",
-            "units": 0
-          },
-          {
-            "date": "2026-10-20",
-            "units": 0
-          },
-          {
-            "date": "2026-10-21",
-            "units": 0
-          },
-          {
-            "date": "2026-10-22",
-            "units": 0
-          },
-          {
-            "date": "2026-10-23",
-            "units": 0
-          },
-          {
-            "date": "2026-10-24",
-            "units": 0
-          },
-          {
-            "date": "2026-10-25",
-            "units": 0
-          },
-          {
-            "date": "2026-10-26",
-            "units": 0
-          },
-          {
-            "date": "2026-10-27",
-            "units": 0
-          },
-          {
-            "date": "2026-10-28",
-            "units": 0
-          },
-          {
-            "date": "2026-10-29",
-            "units": 0
-          },
-          {
-            "date": "2026-10-30",
-            "units": 0
-          },
-          {
-            "date": "2026-10-31",
-            "units": 0
-          },
-          {
-            "date": "2026-11-01",
-            "units": 0
-          },
-          {
-            "date": "2026-11-02",
-            "units": 0
-          },
-          {
-            "date": "2026-11-03",
-            "units": 0
-          },
-          {
-            "date": "2026-11-04",
-            "units": 0
-          },
-          {
-            "date": "2026-11-05",
-            "units": 0
-          },
-          {
-            "date": "2026-11-06",
-            "units": 0
-          },
-          {
-            "date": "2026-11-07",
-            "units": 0
-          },
-          {
-            "date": "2026-11-08",
-            "units": 0
-          }
-        ]
-      },
-      "redownloads": {
-        "total": 0
-      },
-      "devices": {},
-      "countries": {},
-      "monthly": [],
       "updates": {
         "total": 0
       },
