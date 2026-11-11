@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.achraftrabelsi.kidoo",
+      "sha256_cert_fingerprints": [
+        "D7:93:28:62:E8:5A:9B:22:11:37:E4:1E:70:7F:6C:FD:A8:1E:D9:09:56:F3:9F:66:23:36:4B:09:9F:17:B9:33"
+      ]
+    }
+  }
+]
