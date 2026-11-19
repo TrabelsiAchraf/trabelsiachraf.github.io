@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-18T21:39:40.357Z",
+  "lastUpdated": "2026-11-19T21:54:53.243Z",
   "totals": {
-    "downloads": 722
+    "downloads": 727
   },
   "apps": [
     {
@@ -26,15 +26,11 @@
         "ratingCount": 2
       },
       "downloads": {
-        "total": 351,
+        "total": 354,
         "priorToSeries": 86,
-        "last7Days": 9,
-        "last30Days": 54,
+        "last7Days": 11,
+        "last30Days": 55,
         "daily": [
-          {
-            "date": "2026-08-20",
-            "units": 0
-          },
           {
             "date": "2026-08-21",
             "units": 0
@@ -390,21 +386,25 @@
           {
             "date": "2026-11-17",
             "units": 4
+          },
+          {
+            "date": "2026-11-18",
+            "units": 3
           }
         ]
       },
       "redownloads": {
-        "total": 46
+        "total": 48
       },
       "devices": {
-        "iPhone": 320,
+        "iPhone": 323,
         "iPad": 17,
         "Desktop": 14
       },
       "countries": {
-        "US": 133,
+        "US": 135,
         "GB": 79,
-        "FR": 37,
+        "FR": 38,
         "CA": 25,
         "AU": 18,
         "IN": 6,
@@ -473,7 +473,7 @@
         },
         {
           "month": "2026-11",
-          "units": 25
+          "units": 28
         }
       ],
       "updates": {
@@ -536,13 +536,9 @@
       "downloads": {
         "total": 201,
         "priorToSeries": 0,
-        "last7Days": 20,
-        "last30Days": 93,
+        "last7Days": 18,
+        "last30Days": 92,
         "daily": [
-          {
-            "date": "2026-08-20",
-            "units": 0
-          },
           {
             "date": "2026-08-21",
             "units": 1
@@ -898,11 +894,15 @@
           {
             "date": "2026-11-17",
             "units": 2
+          },
+          {
+            "date": "2026-11-18",
+            "units": 0
           }
         ]
       },
       "redownloads": {
-        "total": 20
+        "total": 21
       },
       "devices": {
         "iPhone": 185,
@@ -986,7 +986,7 @@
         }
       ],
       "updates": {
-        "total": 171
+        "total": 213
       },
       "activeDevices": null,
       "usage": {
@@ -1064,15 +1064,11 @@
         "ratingCount": 0
       },
       "downloads": {
-        "total": 159,
+        "total": 161,
         "priorToSeries": 0,
-        "last7Days": 20,
-        "last30Days": 68,
+        "last7Days": 21,
+        "last30Days": 69,
         "daily": [
-          {
-            "date": "2026-08-20",
-            "units": 1
-          },
           {
             "date": "2026-08-21",
             "units": 0
@@ -1428,6 +1424,10 @@
           {
             "date": "2026-11-17",
             "units": 3
+          },
+          {
+            "date": "2026-11-18",
+            "units": 2
           }
         ]
       },
@@ -1435,11 +1435,11 @@
         "total": 0
       },
       "devices": {
-        "Desktop": 159
+        "Desktop": 161
       },
       "countries": {
-        "US": 35,
-        "FR": 33,
+        "US": 36,
+        "FR": 34,
         "CN": 12,
         "IN": 12,
         "BE": 11,
@@ -1506,11 +1506,11 @@
         },
         {
           "month": "2026-11",
-          "units": 38
+          "units": 40
         }
       ],
       "updates": {
-        "total": 56
+        "total": 59
       },
       "activeDevices": null,
       "usage": {
@@ -1534,19 +1534,19 @@
       "id": "6827770032",
       "name": "Kidoo : Agenda familial",
       "bundleId": "com.achraftrabelsi.kidoo",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/cb/0a/66cb0acf-3b8a-0e98-c7bb-7d5846f13277/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/d4/9c/7bd49c52-d2c6-f57c-a753-9c40f745e0b5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "meta": {
-        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/cb/0a/66cb0acf-3b8a-0e98-c7bb-7d5846f13277/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/d4/9c/7bd49c52-d2c6-f57c-a753-9c40f745e0b5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
         "releaseDate": "2026-11-09",
-        "version": "1.1.0",
-        "versionDate": "2026-11-10",
+        "version": "1.2.0",
+        "versionDate": "2026-11-19",
         "genre": "Lifestyle",
         "languages": [
           "EN",
           "FR"
         ],
         "minimumOsVersion": "17.0",
-        "sizeBytes": 24330240,
+        "sizeBytes": 24350720,
         "rating": 0,
         "ratingCount": 0
       },
@@ -1556,10 +1556,6 @@
         "last7Days": 3,
         "last30Days": 7,
         "daily": [
-          {
-            "date": "2026-08-20",
-            "units": 0
-          },
           {
             "date": "2026-08-21",
             "units": 0
@@ -1915,11 +1911,15 @@
           {
             "date": "2026-11-17",
             "units": 0
+          },
+          {
+            "date": "2026-11-18",
+            "units": 0
           }
         ]
       },
       "redownloads": {
-        "total": 2
+        "total": 3
       },
       "devices": {
         "iPhone": 6,
@@ -1976,10 +1976,6 @@
         "last7Days": 1,
         "last30Days": 1,
         "daily": [
-          {
-            "date": "2026-08-20",
-            "units": 0
-          },
           {
             "date": "2026-08-21",
             "units": 0
@@ -2335,6 +2331,10 @@
           {
             "date": "2026-11-17",
             "units": 1
+          },
+          {
+            "date": "2026-11-18",
+            "units": 0
           }
         ]
       },
