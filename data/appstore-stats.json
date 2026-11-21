@@ -1,40 +1,37 @@
 {
-  "lastUpdated": "2026-11-20T21:36:42.176Z",
+  "lastUpdated": "2026-11-21T20:17:26.318Z",
   "totals": {
-    "downloads": 735
+    "downloads": 745
   },
   "apps": [
     {
       "id": "6740041173",
       "name": "Salt Scan: Sodium Tracker",
       "bundleId": "com.tadevv.SaltScan",
-      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/b0/30/dab030e0-7bd3-6b93-7532-1558044b2146/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/5e/7f/a45e7fdf-d76b-626a-33fb-d4c40392a8b2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
       "meta": {
-        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/b0/30/dab030e0-7bd3-6b93-7532-1558044b2146/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
+        "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/5e/7f/a45e7fdf-d76b-626a-33fb-d4c40392a8b2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/100x100bb.jpg",
         "releaseDate": "2025-01-12",
-        "version": "0.5.0",
-        "versionDate": "2026-10-05",
+        "version": "1.0.0",
+        "versionDate": "2026-11-21",
         "genre": "Health & Fitness",
         "languages": [
           "AR",
           "EN",
-          "FR"
+          "FR",
+          "ES"
         ],
         "minimumOsVersion": "18.0",
-        "sizeBytes": 13033472,
+        "sizeBytes": 22411264,
         "rating": 2.5,
         "ratingCount": 2
       },
       "downloads": {
-        "total": 355,
+        "total": 360,
         "priorToSeries": 86,
-        "last7Days": 11,
-        "last30Days": 56,
+        "last7Days": 14,
+        "last30Days": 59,
         "daily": [
-          {
-            "date": "2026-08-22",
-            "units": 1
-          },
           {
             "date": "2026-08-23",
             "units": 0
@@ -390,6 +387,10 @@
           {
             "date": "2026-11-19",
             "units": 1
+          },
+          {
+            "date": "2026-11-20",
+            "units": 5
           }
         ]
       },
@@ -397,21 +398,21 @@
         "total": 48
       },
       "devices": {
-        "iPhone": 324,
+        "iPhone": 329,
         "iPad": 17,
         "Desktop": 14
       },
       "countries": {
-        "US": 136,
+        "US": 137,
         "GB": 79,
-        "FR": 38,
+        "FR": 41,
         "CA": 25,
         "AU": 18,
         "IN": 6,
         "SA": 6,
         "BE": 6,
+        "CH": 5,
         "MA": 5,
-        "CH": 4,
         "RU": 3,
         "IE": 3,
         "DE": 3,
@@ -473,7 +474,7 @@
         },
         {
           "month": "2026-11",
-          "units": 29
+          "units": 34
         }
       ],
       "updates": {
@@ -483,7 +484,15 @@
       "usage": {
         "source": "App Sessions Standard",
         "optInOnly": true,
-        "daily": [],
+        "daily": [
+          {
+            "date": "2026-11-20",
+            "sessions": 18,
+            "deviceCountSum": 5,
+            "processingDate": "2026-11-21",
+            "provisional": true
+          }
+        ],
         "weekly": [
           {
             "date": "2026-11-02",
@@ -534,15 +543,11 @@
         "ratingCount": 1
       },
       "downloads": {
-        "total": 205,
+        "total": 210,
         "priorToSeries": 0,
-        "last7Days": 20,
-        "last30Days": 94,
+        "last7Days": 21,
+        "last30Days": 98,
         "daily": [
-          {
-            "date": "2026-08-22",
-            "units": 0
-          },
           {
             "date": "2026-08-23",
             "units": 0
@@ -898,6 +903,10 @@
           {
             "date": "2026-11-19",
             "units": 4
+          },
+          {
+            "date": "2026-11-20",
+            "units": 5
           }
         ]
       },
@@ -905,28 +914,28 @@
         "total": 21
       },
       "devices": {
-        "iPhone": 189,
+        "iPhone": 194,
         "iPad": 14,
         "Desktop": 2
       },
       "countries": {
-        "FR": 64,
+        "FR": 65,
         "US": 31,
         "SN": 25,
+        "SA": 7,
         "CA": 5,
         "GH": 5,
-        "SA": 5,
         "MA": 4,
         "BE": 4,
         "CI": 4,
         "NG": 4,
+        "AE": 4,
         "NE": 3,
         "MR": 3,
         "DZ": 3,
         "IQ": 3,
         "EG": 3,
         "BJ": 3,
-        "AE": 3,
         "OM": 2,
         "ML": 2,
         "GM": 2,
@@ -946,6 +955,7 @@
         "XK": 1,
         "KG": 1,
         "DK": 1,
+        "MG": 1,
         "KE": 1,
         "ID": 1,
         "CD": 1,
@@ -982,11 +992,11 @@
         },
         {
           "month": "2026-11",
-          "units": 54
+          "units": 59
         }
       ],
       "updates": {
-        "total": 252
+        "total": 257
       },
       "activeDevices": null,
       "usage": {
@@ -1013,6 +1023,13 @@
             "deviceCountSum": 5,
             "processingDate": "2026-11-18",
             "provisional": false
+          },
+          {
+            "date": "2026-11-20",
+            "sessions": 11,
+            "deviceCountSum": 5,
+            "processingDate": "2026-11-21",
+            "provisional": true
           }
         ],
         "weekly": [
@@ -1066,13 +1083,9 @@
       "downloads": {
         "total": 163,
         "priorToSeries": 0,
-        "last7Days": 17,
-        "last30Days": 67,
+        "last7Days": 15,
+        "last30Days": 62,
         "daily": [
-          {
-            "date": "2026-08-22",
-            "units": 0
-          },
           {
             "date": "2026-08-23",
             "units": 0
@@ -1428,6 +1441,10 @@
           {
             "date": "2026-11-19",
             "units": 2
+          },
+          {
+            "date": "2026-11-20",
+            "units": 0
           }
         ]
       },
@@ -1510,7 +1527,7 @@
         }
       ],
       "updates": {
-        "total": 66
+        "total": 70
       },
       "activeDevices": null,
       "usage": {
@@ -1556,10 +1573,6 @@
         "last7Days": 3,
         "last30Days": 8,
         "daily": [
-          {
-            "date": "2026-08-22",
-            "units": 0
-          },
           {
             "date": "2026-08-23",
             "units": 0
@@ -1915,6 +1928,10 @@
           {
             "date": "2026-11-19",
             "units": 1
+          },
+          {
+            "date": "2026-11-20",
+            "units": 0
           }
         ]
       },
@@ -1938,7 +1955,7 @@
         }
       ],
       "updates": {
-        "total": 5
+        "total": 7
       },
       "activeDevices": null,
       "usage": {
@@ -1976,10 +1993,6 @@
         "last7Days": 1,
         "last30Days": 1,
         "daily": [
-          {
-            "date": "2026-08-22",
-            "units": 0
-          },
           {
             "date": "2026-08-23",
             "units": 0
@@ -2334,6 +2347,10 @@
           },
           {
             "date": "2026-11-19",
+            "units": 0
+          },
+          {
+            "date": "2026-11-20",
             "units": 0
           }
         ]
